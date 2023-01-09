@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    vertical-align: middle;
+}
+.ul{
+    list-style: none;
+    
+}
+ a{
+  text-decoration: none;
+  display: inline-block;
+}
+.menu_bg{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+  
+}
+.nav_btn{
+    padding: 10px 24px;
+    background: #5956E8;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    position: relative;
+}
+
+.nav-item .nav-link{
+    font-size: 18px;
+    color: black;
+}
+.nav-item .nav-link:hover{
+   color: #5956E8;
+   
+}
+/* nav part end here */
+
+/* bannar part start here */
+
+.bannar{
+   
+    background-color: #5956E8;
+    padding: 200px 0px;
+    width: auto;
+    
+}
+
+
+.bannar_text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFEFE;
+
+}
+.bannar_text p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+.ban_btn {
+    padding: 15px 32px;
+     border: 1px solid white;
+    color: #5956E8;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    color: #E3E3E3;
+    z-index: 6;
+    font-size: 20px;
+}
+
+.ban_btn::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transform-origin: left;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -ms-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    background-color: white;
+    inset: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+.ban_btn:hover::after{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+
+/* survice part start */
+
+.survice_head{
+    text-align: center;
+    padding-top: 100px;
+}
+.survice_head h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    
+    color: #181818;
+    
+}
+
+.survice_head p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(24, 24, 24, 0.7);
+
+}
+.survice{
+    margin-top: 50px;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 0.5px solid #E3E3E3;
+    border-radius: 10px;
+    padding: 40px;
+    transition: 0.5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.survice:hover{
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+    transform: scale(1);
+    border: 0.5px solid transparent;
+}
+.survice h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #181818;
+
+}
+.survice p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(24, 24, 24, 0.7);
+}
+.survice i{
+   padding: 17px;
+   border: 1px solid rgba(0, 0, 0, 0.134);
+   font-size: 25px;
+   border-radius: 8px;
+   color: #5956E8;
+   margin-bottom: 22px;
+}
+.survice i:hover{
+    background-color: #5956E8;
+    color: #FFFEFE;
+    transition: 0.5s;
+}
+
+
+/* portfoliw part start  */
+
+.portfolio_head{
+    padding-top: 100px;
+    text-align: center;
+}
+.portfolio_head h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #181818;
+
+}
+.portfolio_head p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(24, 24, 24, 0.7);
+}
+.item{
+    padding-top: 30px;
+    width: 100%;
+}
+.item ul {
+    display: flex;  
+    justify-content: center;  
+   
+}
+.item ul ol a{
+    color: #181818;
+    position: relative;
+
+   
+}
+.item ul ol a:hover{
+    color: #5956E8;
+}
+
+.item ul ol a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #5956E8;
+  transition: 0.5s;
+ 
+}
+.item ul ol a:hover::before{
+    width: 100%;
+    
+}
+
+.hover_img{
+    position: relative;
+   
+
+    display: inline-block;
+}
+.hover_img .box .img_box{
+    position: relative;
+    overflow: hidden;
+}
+.hover_img .box .img_box img{
+     width: 100%;
+     transition: transform 1s;
+     opacity: 0.6;
+}
+.hover_img .box:hover .img_box img{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.hover_img .box .ovarly{
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     background-color: #0d1334c6;
+     transform: scaleY(0);
+     transition: 1s;
+     height: 50%;
+     width: 50%;
+    
+}
+.hover_img .box:hover .ovarly{
+    transform: scaleY(1);
+}
+.hover_img .box .ovarly .ovarly_text{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* team part start here */
+
+.team_head{
+    padding: 50px 0;
+}
+.team_head h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #181818;
+}
+.team_head p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(24, 24, 24, 0.7);
+}
+.team_img{
+    height: 444px;
+    width: 100%;
+    position: relative;
+}
+.team_img img{
+    width: 100%;
+    height: 100%;
+}
+.team_img::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: height .5s ease-in-out;
+    border-radius: 10px;
+    z-index: 0;
+    -webkit-transition: height .5s ease-in-out;
+    -moz-transition: height .5s ease-in-out;
+    -ms-transition: height .5s ease-in-out;
+    -o-transition: height .5s ease-in-out;
+}
+.team_img:hover::after{
+    background: linear-gradient(0deg, #5956E8 -1.13%, rgba(255, 255, 255, 0) 58.11%);
+    height: 100%;
+}
+.team_text{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: #E3E3E3;
+    text-align: center;
+   
+}
+
+/* customar part start here */
+
+.Customar_head {
+    padding: 100px 0;
+}
+.Customar_head h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #181818;
+}
+.Customar_head p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(24, 24, 24, 0.7);
+}
+.customar{
+    background: #FFFFFF;
+    padding: 48px;
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    justify-content: center;
+}
+.customer_star_icon{
+  padding-top: 30px;
+  color: #FBBF25;
+}
+.customar p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(24, 24, 24, 0.7);
+     padding-top: 10px;
+   
+}
+.customar h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #181818;
+/* latest part start */
+
+}
+
+.latest_head{
+    margin-top: 50px;
+    padding: 50px 0;
+    text-align: center;
+}
+.latest_head h2{
+    padding-bottom: 10px;
+}
+.latest{
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    padding: 19px;
+   
+}
+.latest img{
+    width: 100%;
+}
+
+
+.latest p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+    padding-top: 20px;
+
+}
+.latest_h4{
+      padding-top: 50px;
+}
+.latest_btn{
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: 1px solid #5956E8;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+   
+    color: #5956E8;
+    z-index: 999999;
+}
+.latest_btn::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transform: scale(0);
+    -webkit-transform: 0;
+    -moz-transform: 0;
+    -ms-transform: 0;
+    -o-transform: 0;
+    transition:  transform 0.5s ease-in-out;
+    -webkit-transition:  transform 0.5s ease-in-out;
+    -moz-transition:  transform 0.5s ease-in-out;
+    -ms-transition:  transform 0.5s ease-in-out;
+    -o-transition:  transform 0.5s ease-in-out;
+    background-color: #5956E8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    inset: 0;
+    transform-origin: left;
+    
+    
+}
+.latest_btn:hover::after{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    color: white;
+}
+/* footer part start */
+
+#footer{
+    margin-top: 100px;
+    padding: 100px;
+    background: rgba(89, 86, 232, 0.1);
+}
+.footer a{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+
+
+    color: #5D5D5D;
+
+}
+.footer p{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #181818;
+
+}
+.sosal_icon i{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #E3E3E3;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer h6{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 27px;
+/* or 169% */
+
+
+color: #5D5D5D;
+
+}
+
